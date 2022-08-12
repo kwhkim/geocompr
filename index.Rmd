@@ -9,7 +9,7 @@ documentclass: krantz
 #documentclass: book
 #mainfont: "NanumMyeongjo"
 #mainfont: "NanumMyeongjoOTF"
-#monofont: "Source Code Pro"
+monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
 bibliography:
   - geocompr.bib
