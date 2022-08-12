@@ -2,8 +2,12 @@
 \mainmatter
 ```
 
+\setcounter{secnumdepth}{4}
+
 # Introduction {#intro}
 <!--rl-->
+
+한글 테스트!\index{한글테스트}
 
 This book is about using the power of computers to *do things* with geographic data.
 It teaches a range of spatial skills, including: reading, writing and manipulating geographic data; making static and interactive maps; applying geocomputation\index{geocomputation} to solve real-world problems; and modeling geographic phenomena.
