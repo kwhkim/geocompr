@@ -7,7 +7,7 @@ output: bookdown::pdf
 #output: bookdown::bs4_book
 documentclass: krantz
 #documentclass: book
-#mainfont: "NanumMyeongjo"
+mainhangulfont: "NanumMyeongjo"
 #mainfont: "NanumMyeongjoOTF"
 monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
