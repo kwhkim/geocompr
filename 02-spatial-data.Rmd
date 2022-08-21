@@ -906,7 +906,12 @@ However, in contrast to vector data, the cell of one raster layer can only hold 
 The value might be numeric or categorical (Figure \@ref(fig:raster-intro-plot):C).
 
 ```{r raster-intro-plot, echo = FALSE, fig.cap = "Raster data types: (A) cell IDs, (B) cell values, (C) a colored raster map.", fig.scap="Raster data types.", fig.asp=0.5, message=FALSE}
-source("https://github.com/Robinlovelace/geocompr/raw/main/code/02-raster-intro-plot.R", print.eval = TRUE)
+tryCatch({
+  source("https://github.com/Robinlovelace/geocompr/raw/main/code/02-raster-intro-plot.R", print.eval = TRUE)},
+  error = function(e) {
+    source("code/02-raster-intro-plot.R", print.eval = TRUE)
+  })
+
 ```
 
 Raster maps usually represent continuous phenomena such as elevation, temperature, population density or spectral data.
@@ -1108,6 +1113,14 @@ Both datums in Figure \@ref(fig:datum-fig) are put on top of a geoid - a model o
 
 ```{r datum-fig, echo=FALSE, message=FALSE, fig.cap="(ref:datum-fig)", fig.scap="Geocentric and local geodetic datums on a geoid."}
 knitr::include_graphics("figures/02_datum_fig.png")
+```
+
+This is another picture
+
+(ref:x-fig) the work of @akima_akima_2016. use the code `x<-3`. or `r print(1)`. _32나 %32처럼 보통 fig.cap=에 쓸 수 없는 문자도 쓸 수 있나?
+
+```{r x-fig, echo=FALSE, message=FALSE, fig.cap="(ref:x-fig)", fig.scap="This picture is for testing"}
+knitr::include_graphics("figures/tmview-1.png")
 ```
 
 ### Projected coordinate reference systems 
