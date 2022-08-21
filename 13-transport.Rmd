@@ -416,7 +416,11 @@ gh_release_upload("routes_short.Rds", tag = "1.9.1-2")
 
 ```{r 13-transport-18-2, echo=FALSE}
 u = "https://github.com/Robinlovelace/geocompr/releases/download/1.9.1-2/routes_short.Rds"
-routes_short = readRDS(url(u))
+tryCatch({ 
+    routes_short = readRDS(url(u))},
+  error = function(e) {
+    routes_short = readRDS("routes_short.Rds")
+  })
 ```
 
 The output is `routes_short`, an `sf` object representing routes on the transport network\index{network} that are suitable for cycling (according to the OSRM routing engine at least), one for each desire line.
