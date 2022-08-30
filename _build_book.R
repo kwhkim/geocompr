@@ -21,6 +21,7 @@ if (file.exists(file.path('_book',
   cat(' - pdf found, deleting...')
   delete_success = file.remove(file.path('_book', 
                                paste0(bookname, '.pdf')))
+  file.remove(paste0(bookname, '.aux')) # 
   if (!delete_success) {
     cat('\n')
     stop(paste0(file.path('_book', 

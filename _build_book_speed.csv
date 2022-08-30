@@ -9,3 +9,6 @@ datetime,machine,cpu_vendor,cpu_model,cpu_ncores,mem_total,mem_free,sys_name,sys
 2022-08-17 19:38:02,x86_64,GenuineIntel,Intel(R) Xeon(R) CPU @ 2.30GHz,2,7.27 GiB,6.45 GiB,Linux,#21~20.04.1-Ubuntu SMP Fri Aug 5 12:53:07 UTC 2022,TRUE,11.058845671017965,NA
 2022-08-22 03:22:02,x86_64,GenuineIntel,Intel(R) Xeon(R) CPU @ 2.30GHz,2,7.27 GiB,5.93 GiB,Linux,#21~20.04.1-Ubuntu SMP Fri Aug 5 12:53:07 UTC 2022,TRUE,3.9977803826332092,NA
 2022-08-22 03:59:17,x86_64,GenuineIntel,Intel(R) Xeon(R) CPU @ 2.30GHz,2,7.27 GiB,6.3 GiB,Linux,#21~20.04.1-Ubuntu SMP Fri Aug 5 12:53:07 UTC 2022,TRUE,1.9711410005887349,NA
+2022-08-30 21:36:34,x86_64,GenuineIntel,Intel(R) Xeon(R) CPU @ 2.30GHz,2,7.27 GiB,6.46 GiB,Linux,#21~20.04.1-Ubuntu SMP Fri Aug 5 12:53:07 UTC 2022,TRUE,0.41317359209060667,NA
+2022-08-30 21:38:03,x86_64,GenuineIntel,Intel(R) Xeon(R) CPU @ 2.30GHz,2,7.27 GiB,6.42 GiB,Linux,#21~20.04.1-Ubuntu SMP Fri Aug 5 12:53:07 UTC 2022,TRUE,0.42379602988560994,NA
+2022-08-30 21:42:30,x86_64,GenuineIntel,Intel(R) Xeon(R) CPU @ 2.30GHz,2,7.27 GiB,6.44 GiB,Linux,#21~20.04.1-Ubuntu SMP Fri Aug 5 12:53:07 UTC 2022,TRUE,2.5784262776374818,NA
