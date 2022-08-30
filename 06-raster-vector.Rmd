@@ -133,7 +133,8 @@ zion_points = cbind(zion_points, elevation)
 ```
 
 ```{r pointextr, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Locations of points used for raster extraction.", fig.asp=0.57}
-source("https://github.com/Robinlovelace/geocompr/raw/main/code/05-pointextr.R", print.eval = TRUE)
+#source("https://github.com/Robinlovelace/geocompr/raw/main/code/05-pointextr.R", print.eval = TRUE)
+source("code/05-pointextr.R", print.eval = TRUE)
 ```
 
 Raster extraction also works with **line** selectors.
@@ -260,7 +261,7 @@ zion_nlcd = terra::extract(nlcd, vect(zion_many2))
 count(zion_nlcd, levels)
 ```
 
-```{r 06-raster-vector-18 }
+```{r 06-raster-vector-18, eval=FALSE}
 zion_srtm_values = terra::extract(x = srtm, y = zion_vect)
 ```
 

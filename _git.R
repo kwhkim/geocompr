@@ -12,8 +12,14 @@ lns = readLines('_git.sh')
 
 for (ln in lns) {
   cat(paste('$ ', ln, '\n', collapse=""))
-  scan()
-  system(ln)
+  yn = scan() # dfsdfas311:zv"asdf@!@#$&(*^" -> Error in scan()
+  if (length(yn)==0) {
+    if (grepl("^ *$", ln)) next
+    system(ln)  
+  } else {
+    cat("! Skipping the line:", ln, "\n")
+  }
+  
 }
 
 cat('* continue to source("_build_book.R")?\n')
