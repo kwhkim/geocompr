@@ -18,7 +18,9 @@ for (ln in lns) {
 
 cat('* continue to source("_build_book.R")?\n')
 yn = scan()
-if (yn == 'y') {
+if (length(yn) == 0) {
+  source('_build_book.R')  
+} else if (yn != 'n' && yn != 'N') {
   source('_build_book.R')  
 }
 
