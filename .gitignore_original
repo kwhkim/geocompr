@@ -1,0 +1,23 @@
+# from official github repository
+#   https://github.com/geocompx/geocompr/blob/main/.gitignore
+
+# 아래 indentation은 이유가 있나???
+.bash_history
+.rstudio/
+  .Rproj.user
+.Rhistory
+.RData
+_bookdown_files
+.DS_Store
+.Rapp.history
+_book
+_main.*
+  *.html
+*.pdf
+*.utf8.md
+!ga.html
+libs/
+  
+  geocompr2.rds
+*.gpkg
+figures/

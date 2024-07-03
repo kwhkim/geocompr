@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    branches:
+      - main
+name: Render-no-deploy
+jobs:
+  bookdown:
+    name: Render-Book
+    runs-on: ubuntu-latest
+    container: geocompr/geocompr:suggests
+    steps:
+      - uses: actions/checkout@v2
+      - name: Render Book
+        run: |
+          Rscript -e 'install.packages("geocompkg", repos = c("https://geocompr.r-universe.dev", "https://cloud.r-project.org"), dependencies = TRUE, force = TRUE)'
+          Rscript -e 'bookdown::render_book("index.Rmd")'
